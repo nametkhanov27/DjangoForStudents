@@ -23,3 +23,34 @@ class User(models.Model):
 	
 	def __str__(self):
 		return self.user_name + " " + self.user_surname
+
+class Comments(models.Model):
+	comments_text = models.TextField()
+
+	def __str__(self):
+		return self.comments_text
+
+class Ads(models.Model):
+	ads_owner = models.CharField(max_length=100)
+	ads_content = models.TextField()
+	
+	def __str__(self):
+		return self.ads_content
+		
+class QuantityOfViews(models.Model):
+	number_of_views = models.IntegerField()
+	link_to_hidden_ad = models.TextField()
+	
+	def getNumberOfViews(self):
+		return self.number_of_views
+
+
+
+
+
+
+
+
+
+
+

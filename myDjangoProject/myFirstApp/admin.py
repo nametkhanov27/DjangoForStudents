@@ -4,4 +4,7 @@ from .models import *
 admin.site.register(Article)
 admin.site.register(Editor)
 admin.site.register(User)
+admin.site.register(Ads)
+admin.site.register(Comments)
+admin.site.register(QuantityOfViews)
 # admin.site.register(Article)
